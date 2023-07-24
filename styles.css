@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin: 0px 0px 20px 0px;
+}
+
+.heading {
+    text-align: center;
+    color: aquamarine;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: aqua;
+}
+
+.anchor {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.name {
+    color: white;
+    font-family: 'Lugrasimo', cursive;
+}
+
+.name:hover {
+    background-color: rgb(31, 2, 2);
+    box-shadow: 0px 0px 90px 2px red;
+    border-radius: 20%;
+    padding: 10px;
+}
+
+.images {
+    margin-left: 4%;
+}
+
+.images img {
+    height: 400px;
+    width: 30%;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.images img:hover {
+    box-shadow: 0px 0px 90px 2px red;
+}
+
+.items {
+    display: inline-block;
+    background-color: white;
+    height: 250px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.food img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px solid black;
+    /* margin-bottom: 0; */
+}
+
+
+.first {
+    float: left;
+    position: absolute;
+    margin: 3px 0px 0px 5px;
+}
+
+.second {
+    float: right;
+    margin-right: 5px;
+}
+
+p {
+    margin: 0;
+}
+
+.veg {
+    color: green;
+}
+
+.non-veg {
+    color: red;
+}
+
+.second .rating {
+    margin-left: 50px;
+}
+
+.items:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width:800px)
+{
+    .heading h1,h2,span {
+        font-size: 20px;
+    }
+
+    .anchor {
+        font-size: 10px;
+    }
+
+    .images {
+        display: block;
+        width: 100%;
+    }
+
+    .images img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .food img {
+        width: 100px;
+        height: 100px;
+        border-radius: 5px;
+        margin-right: 0px;
+    }
+
+    .food p {
+        font-size: 8px;
+    }
+
+    .first {
+        margin-left: 2.5px;
+    }
+
+    .second p {
+        margin-left: 20px;
+        margin-top: 1px;
+    }
+
+    .items {
+        height: 130px;
+        margin: 0px 5px 25px 0px;
+        border-radius: 5px;
+    }
+}
