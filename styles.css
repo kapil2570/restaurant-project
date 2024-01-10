@@ -18,19 +18,25 @@ h2 {
 }
 
 a {
-    margin-right: 10px;
     text-decoration: none;
     color: white;
 }
 
-a:hover {
-    color: aqua;
-}
-
-.anchor {
+/* .anchor {
     text-align: center;
     margin-bottom: 30px;
     font-size: 15px;
+} */
+
+.anchor {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+a:hover {
+    color: aqua;
 }
 
 .name {
@@ -45,14 +51,14 @@ a:hover {
     padding: 10px;
 }
 
-.images {
-    margin-left: 4%;
-}
-
 .images img {
     height: 400px;
-    width: 30%;
-    margin-right: 20px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
     margin-bottom: 30px;
 }
 
@@ -68,6 +74,15 @@ a:hover {
     margin-right: 10px;
     border-radius: 10px;
     position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food {                
+    display: flex;   
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* justify-content: center; */
 }
 
 .food img {
@@ -108,7 +123,7 @@ p {
 }
 
 .items:hover {
-    transform: scale(1.05);
+    transform: scale(1.1) ;
 }
 
 @media(max-width:800px)
